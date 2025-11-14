@@ -14,5 +14,5 @@ To directly work on the github website we can use github codespace which will ma
 10th--> Never forgetto delete the codespace after the work of the online cpdespace Environment.<br>
 
 
-To do any changes in the code and to puch it to the github you can do the changes and then go to the source control option in the left vertical toolbar and add all the file in which you have made the changes and then click on three dot in the top riht corner of the source control dilog box and click "push"<br>
+To do any changes in the code and to push it to the github you can do the changes and then go to the source control option in the left vertical toolbar and add all the file in which you have made the changes and then click on three dot in the top riht corner of the source control dilog box and click "push"<br>
 Now your code is on the Github repo.<br> 
