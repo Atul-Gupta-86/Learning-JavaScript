@@ -1,7 +1,7 @@
 # Learning-JavaScript
 Learning to code JS
 
-To directl ywork on the github website we can use github codespace which willmake the things easier to push on the github after coding .\n
+To directl ywork on the github website we can use github codespace which willmake the things easier to push on the github after coding .<\n>
 1st --> Create an repo on git and go to code section(green color)\n
 2nd --> Create a new codespace \n
 3rd --> Now add the dev container config files... which you wants to be pre installed in that virtual environment that you are using.
