@@ -18,7 +18,7 @@ let score_2 = true
 let Number_score_2 = Number(score_2)
 // console.log(typeof Number_score_2)
 // console.log(Number_score_2)             // 1/0
-let score_3 = '@'
+let score_3 = Symbol('@')
 let Number_score_3 = Number(score_3)
 // console.log(typeof Number_score_3)
 // console.log(Number_score_3)             // NaN
@@ -58,7 +58,7 @@ let var2 = null
 let string_var2 = String(var2)
 // console.log(typeof string_var2)
 // console.log(string_var2)
-let var3 = '@'
+let var3 = Symbol('@')
 let string_var3 = String(var3)
 // console.log(typeof string_var3)
 // console.log(string_var3)
