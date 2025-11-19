@@ -15,7 +15,7 @@ let lst_name = "Gupta"
 
 let name_1 = new String("Hare Narain Narain Hare Hare")
 // console.log(name_1[2]) // It become String object and it have keys as indexing position and letters as values . --->   0 : A,   1 : t,   2 : u,   3 : l and have various methods that can be applied on the Strings such aslength ad many more. 
-console.log(name_1.__proto__) // gives{} mens have various object if this name_1. and we can access that using name_1.xyz
+console.log(name_1.__proto__) // gives{} means have various object of this name_1. and we can access that using name_1.xyz
 console.log(name_1.length)
 console.log(name_1.toLowerCase())
 console.log(name_1.toUpperCase())
