@@ -59,3 +59,6 @@ const addTwo = (num1 , num2 ) => (num1 +num2)
 
 // When we have to retun an object in an arrow fnunction 
 const test  = () => ({name: "Atul", age :21 }) 
+
+
+// In simple arrow function syntax -->    () => {//code}      done 
