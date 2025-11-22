@@ -4,7 +4,7 @@
 
 let number_ = 1234 //supports up to 2^53
 let string_ ="Atul"
-let bigInt_ = 12345678876543 //for trading or huge numbers
+let bigInt_ = 12345678876543n //for trading or huge numbers
 let bool_ = true
 let null_ = "standalone_value"
 let undefined_  = "Value_not_defined_ yet..."
