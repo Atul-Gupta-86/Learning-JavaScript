@@ -26,7 +26,3 @@ function chai() {
 ((occurance) => {
     console.log(`${occurance} TIME DB CONNECTED `)
     }) ("3rd");   
-
-
-
-// node 03_basics/24_lec.js

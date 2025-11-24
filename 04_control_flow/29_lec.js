@@ -1,12 +1,14 @@
-// For of loop
+// For of loop :- can be used to iterate elements of a string, arrray but can't of object, and also map but we can get map in forof loop as an array of 2 element 
+// and we can also get by tricking the syntax as :----> for (const [keys_of_map, values_of_map] of map_1) { }.
+// For in loop :- can be used to iterate all things except map and it bydefault  give keys only to get value we can use as array in console like : - ( arr[1] / myobj[keys/items])
 //______________________________________________________________________________________________________________________________
 
 
-// [ { }, { }, {  }, { }, { }]      // Objects in array
 // [ " ", " ", " ", " ", " "]       // Strings in array
+// [ { }, { }, {  }, { }, { }]      // Objects in array
 
 const arr_1 = [71, 62, 34, 42, 56]
-// for (const iterator of object) {   // Here object doesn't refer to the JS object it just an objec(thing) on which thing we are applying the loop.
+// for ( const iterator(i) of object(arr_1) ) {   // Here object doesn't refer to the JS object it just an objec(thing) on which thing we are applying the loop.
 //     //syntax of forof loop
 // }
 
@@ -46,7 +48,6 @@ for (const [keys_of_map, values_of_map] of map_1) {
     // console.log(keys_of_map, ':-' ,values_of_map)
 }
 
-
 //______________________________________________________________________________________________________________________________
 
 // Objects can't be iterate via forof loop.
@@ -77,7 +78,7 @@ for (const key in myObj1) {
 
 const arr_2 = [77, 66, 33, 44, 55]
 for (const key in arr_2) {
-    // console.log(key , ":-", arr_2[key]) // we can access the idex as well as element of an array via forin loop.
+    // console.log(key , ":-", arr_2[key]) // we can access the index as well as element of an array via forin loop.
 }
 
 const name = "Atul"
@@ -102,18 +103,24 @@ for (const key in name) {
 const array_1 = ["JavaScript", "Python", "Ruby", "Cpp"]
 
 
-// Foreach loop is a inbuilt prototype of array in js.
-array_1.forEach ( function (items) {
-//    console.log(items)                          // Normal function.
-} )  
+// // Foreach loop is a inbuilt prototype of array in js.
+
+// function printMe(items){
+//     console.log(items)                          // Normal function.
+// }
+
+// array_1.forEach ( function function_name_1(items) {
+// //    console.log(items)                          // Normal function inside forEach ---> wrong syntax
+// } )  
 
 //       In the forEach parenthesis we pass a callbacfun -> call back function is defined same as a normal function without name of the
 //       function and the function parameter takes the i/ items/ val/ value or any_name we give , now we can define the function in the scope
 //       of this callbackfunction 
 
 array_1.forEach( (items) => { 
-    // console.log(items)                          // Arrow function.
+    // console.log(items)                          // Arrow function inside forEach ---> right syntax
 } )
+
 
 
 function printMe(items){

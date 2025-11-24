@@ -55,6 +55,7 @@ let anotherfncn = () => {    // let anotherfncn = function () {   ---> remove fu
 const addTwo = (num1 , num2 ) => (num1 +num2)
 // console.log(addTwo (6,65))
 
+// but if we are trying to use this syntax --> () => { // then inside scope of this we have to also return the value.}
 
 
 // When we have to retun an object in an arrow fnunction 
