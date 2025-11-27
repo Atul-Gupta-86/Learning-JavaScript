@@ -11,8 +11,14 @@
         <p>Console.log(window) - Inside console panel in browser inspect give various windows function.</p>
         <p>Console.log(window.document) - but this is too common so we can directly access it vai --> Console.log(document)  </p>
         <p>Console.log(window) - Inside this if we open documnet function then we get various other things like location and many more things that is not visible in Console.log(document) or even in Console.log(window.document), but don't worry we dont need that much. and if you want to see all then you can do one more thign that is Console.dir(document)</p>
+        <pre>There are many thing we can access in document in console by "."
+            and writing the function name such as console.log(document.baseURI)->Gives the link of that webpage or
+            We can find all links of this page by console.log(document.links)-> but we didn't get this as an array instead it's an HTML collection. ya but some features of array also works on this collectionn such as console.log(document.links[2])-> to get the 2nd link of the page.
+            We can use some selector elements by document.getElementByID('__ID__of_the_thing_which_we_want_to_select') to get the value of that id .
+            We can also change it by document.getElementByID('id_name').innerHTML = "Text_we_want_to_write". or
+            We can also change it by document.getElementByID('id_name').innerHTML = "<h1>Text_we_want_to_write</h1>".
+        </pre>
         <p></p>
-        <p>Lorem ipsum dolor sit amet.</p>
     </div>
     
 </body>
