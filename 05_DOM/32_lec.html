@@ -17,50 +17,60 @@
     <h2 id="h2_title_01" class="heading_21">Lorem ipsum dolor sit amet.</h2>
     <h2 id="h2_title_02" class="heading_22">Hic sit velit fugiat doloribus!</h2>
     <h2 id="h2_title_03" class="heading_23">Omnis corrupti incidunt minima itaque!</h2>
+    <h2>Lorem ipsum dolor sit amet.</h2>
 
-    <p>Lorem ipsum dolor sit amet.</p>
-       <pre>
-        1-> In console we can do document.getElementById?('title').innerHTML = "DOM by Atul" or 
-        2-> We can do like document.getElementById('title').id
-        3-> We can do like document.getElementById('title').class                    We can't use direcctly class to get class of that id   
-        4-> We can do like document.getElementById('title').className                We can use direcctly className to get class of that id )
-        5-> We can get all attribute of that element by document.getElementById('title').getAttribute   ->This is a function, so this need an parameter. 
-        6-> We can do like document.getElementById('title').getAttribute('id')       -> give id of that id(we are accessing same thing.)       // title
-        7-> We can do like document.getElementById('title').getAttribute('class')    -> give heading i.e. class of that id
-        8-> Similarly a set atttribte also is also here.
-        9-> We can do it by document.getElementById('title').setAttribute('class' , 'test') -> give undefined but it actually does something i.e. It chnages
-        the value of class in that id and make it's value as 'test'. means if we now write document.getElementById('title').getAttribute('class')-> We get the value as test. We can see it (the changes) in the element section in colole tab in browser.
-        10-> We can store the values that returned from the document.getElementById('title') in some variable.
-        Suppose ---> let variable_01 = document.getElementById('title') now we can access more methods of this thing by using "." such as ".style" in the same syntax as we use in HTML in-line css -> with Key-Value pair (style="color : Red") in console we can do as 
-        ---> variable_01.style.backgroundcolor : "red", we can also do padding = "5px" (text distance from the box of the text), margin ="10px" (box distance from the border of the windows screen.) borderRadius ="15px", etc like these styles.
-
-
-        Summary ---> So we can do document.getElementById('bla_bla_bla') and we can apply verious methods on that and also we can store that in a variable and then we can do style and various other methods on that variable.
-
-        Now we can apply some more methods on the variable such as ---> variable_01.innerHTML, variable_01.innerText, variable_01.textContent and all 3 give the same output --> (Text inside the variable)
-        But the actual difference is that whenever there are some content hidden in the text such as suppose if a new span is present inside this and is hidden by style method (style ="display: none") then the inner text shows only the text visible on the screen but the texttContent also shows the text tthat is not visible on the screen or hidden by any style method, but the innerHTML showa the all content inside that tag such as --->( ...All text... then also this  &lt;span&gt; style="display : none">inner text of the heading.&lt;/span&gt; )
-
-
-        We can also access the things via getElementByClassName('Name _of_Class') ---> Returns the HTML Collection.
-
-        ** Query Selector we are going to use are :-
-
-        document.querySelector('h1') --> Gives the 1st h1 in the web page.
-        document.querySelector('h2') --> Gives the 1st h2 in the web page.
-
-        Just as Css in this also we can select class using "." and id using "#" inside queryselector
-
-        document.querySelector('#title') --> Gives the result of the id having name "title".
-        document.querySelector('.heading') --> Gives the result of the class having name "heading".
-
-        We can also use more selectors just as we use in Css selectors.
-        for Ex:-
-        document.querySelector('input')
-        document.querySelector('input[type="password"]')       To select any attribute of input we can put that in square brackets.
+<pre >
+<div style="background-color:gray; color:rgb(222, 77, 77)">
+1-> In console we can do document.getElementById('title').innerHTML = 'DOM (Document object Model) learning on YouTube from Chai Aur Code <span style="display : none">inner text of the heading.</span>' or 
+2-> We can do like document.getElementById('title').id
+3-> We can do like document.getElementById('title').class                    We can't use direcctly class to get class of that id   
+4-> We can do like document.getElementById('title').className                We can use direcctly className to get class of that id )
+5-> We can get all attribute of that element by document.getElementById('title').getAttribute   ->This is a function, so this need an parameter. 
+6-> We can do like document.getElementById('title').getAttribute('id')       -> give id of that id(we are accessing same thing.)       // title
+7-> We can do like document.getElementById('title').getAttribute('class')    -> give heading i.e. class of that id
+8-> Similarly a set atttribte also is also here.
+9-> We can do it by document.getElementById('title').setAttribute('class' , 'test') -> give undefined but it actually does something
+    i.e. It chnages the value of class in that id and make it's value as 'test'.
+    Means if we now write document.getElementById('title').getAttribute('class')-> We get the value as test.
+    We can see it (the changes) in the element section in colole tab in browser.
+10->We can store the values that returned from the document.getElementById('title') in some variable.
+    Suppose ---> let variable_01 = document.getElementById('title') now we can access more methods of this thing by using "." such as ".style" in the
+    same syntax as we use in HTML in-line css -> with Key-Value pair (style="color : Red") in console
+    we can do as---> variable_01.style.backgroundcolor : "red", we can also do padding = "5px" (text distance from the box of the text),
+    margin ="10px" (box distance from the border of the windows screen.) borderRadius ="15px", etc like these styles.
+</div>
 
 
-        
-        </pre>
-    </div>
+Summary --> So we can do document.getElementById('bla_bla_bla') and we can apply verious methods on that and also we can store that in
+            a variable and then we can do style and various other methods on that variable.
+
+Now we can apply some more methods on the variable such as ---> variable_01.innerHTML, variable_01.innerText, variable_01.textContent and
+all 3 give the same output --> (Text inside the variable)But the actual difference is that whenever there are some content hidden in the
+text such as suppose if a new span is present inside this and is hidden by style method (style ="display: none") then the inner text shows
+only the text visible on the screen but the texttContent also shows the text tthat is not visible on the screen or hidden by any style method,
+but the innerHTML showa the all content inside that tag 
+such as --->( ...All text... then also this  &lt;span&gt; style="display : none">inner text of the heading.&lt;/span&gt; )
+
+
+We can also access the things via getElementByClassName('Name _of_Class') ---> Returns the HTML Collection.
+
+** Query Selector we are going to use are :-
+
+document.querySelector('h1') --> Gives the 1st h1 in the web page.
+document.querySelector('h2') --> Gives the 1st h2 in the web page.
+
+Just as Css in this also we can select class using "." and id using "#" inside queryselector
+
+document.querySelector('#title') --> Gives the result of the id having name "title".
+document.querySelector('.heading') --> Gives the result of the class having name "heading".
+
+We can also use more selectors just as we use in Css selectors.
+for Ex:-
+document.querySelector('input')
+document.querySelector('input[type="password"]')       To select any attribute of input we can put that in square brackets.
+
+
+</pre>
+</div>
     
 </body>
