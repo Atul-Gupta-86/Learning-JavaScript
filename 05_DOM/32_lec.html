@@ -17,10 +17,41 @@
     <h2 id="h2_title_01" class="heading_21">Lorem ipsum dolor sit amet.</h2>
     <h2 id="h2_title_02" class="heading_22">Hic sit velit fugiat doloribus!</h2>
     <h2 id="h2_title_03" class="heading_23">Omnis corrupti incidunt minima itaque!</h2>
+    <h2 id="h2_title_04" class="heading_23">Omnis corrupti shifting incidunt minima itaque!</h2>
     <h2>Lorem ipsum dolor sit amet.</h2>
+    To write input in shortcut in vs code we can do input:type_of_input >> such as --- input : password to make things as shown beloew.
+    <input type="password" name=""  id="">
+    <ul>
+        <li class="list-item">One</li>
+        <li class="list-item">Two</li>
+        <li class="list-item">Three</li>
+        <li class="list-item">Four</li>
+    </ul>
 
+    </div>
 <pre >
-<div style="background-color:gray; color:rgb(222, 77, 77)">
+    <div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+<div style="background-color:gray; color:black">
 1-> In console we can do document.getElementById('title').innerHTML = 'DOM (Document object Model) learning on YouTube from Chai Aur Code <span style="display : none">inner text of the heading.</span>' or 
 2-> We can do like document.getElementById('title').id
 3-> We can do like document.getElementById('title').class                    We can't use direcctly class to get class of that id   
@@ -40,7 +71,6 @@
     margin ="10px" (box distance from the border of the windows screen.) borderRadius ="15px", etc like these styles.
 </div>
 
-
 Summary --> So we can do document.getElementById('bla_bla_bla') and we can apply verious methods on that and also we can store that in
             a variable and then we can do style and various other methods on that variable.
 
@@ -54,6 +84,16 @@ such as --->( ...All text... then also this  &lt;span&gt; style="display : none"
 
 We can also access the things via getElementByClassName('Name _of_Class') ---> Returns the HTML Collection.
 
+
+
+
+___________________________________________________________          ________________________________________________________________
+___________________________________________________________**********________________________________________________________________
+
+
+
+
+
 ** Query Selector we are going to use are :-
 
 document.querySelector('h1') --> Gives the 1st h1 in the web page.
@@ -64,13 +104,54 @@ Just as Css in this also we can select class using "." and id using "#" inside q
 document.querySelector('#title') --> Gives the result of the id having name "title".
 document.querySelector('.heading') --> Gives the result of the class having name "heading".
 
+For getting all element having that class or id we can do document.querySelectorAll('..heading_23') --> Gives Node list or for understanding you can 
+say psudo/False/Partial array (Not an pure Array) of (here) two result as in this(our) page we give two element with class heading_23 so we get two 
+to access any particular we can do document.querySelectorAll('..heading_23')[0]/[1] as per our requirement.
+
 We can also use more selectors just as we use in Css selectors.
 for Ex:-
-document.querySelector('input')
-document.querySelector('input[type="password"]')       To select any attribute of input we can put that in square brackets.
+document.querySelector('input')     to select input element
+document.querySelector('input[type="password"]')       To select any attribute of input we can put that attribute in square brackets.
+document.querySelector('p:first-child')     To select first-child of the paragraph tag.
+
+now we can also select the unordered list in the page as
+in the page the text is 
+&lt;ul&gt;
+    &lt;li class="list-item"&gt;One&lt;\li&gt;
+    &lt;li class="list-item"&gt;Two&lt;\li&gt;
+    &lt;li class="list-item"&gt;Three&lt;\li&gt;
+    &lt;li class="list-item"&gt;Four&lt;\li&gt;
+&lt;\ul&gt;
+Here we can select and store the unordered list (ul) in a variable.
+Now we can again select the required list item (li) from that variable by either accesssing the indexing of the querySelectorAll result (remenmber
+ it's a node list not a pure Array ) or if we are interested in only 1st one then we can just do querySelector. 
+let  myul = document.queryselector('ul')
+let myli = myul.queryselector('li') or let myli = myul.queryselectorAll('li')[1]
+now we can do myli.style.backgroundColor ="green"
+we can also do myli.style.padding ="10px"
+
+we can also do myli.innertext ="Second item"     Can also acces the text of the element but not via style attribute.
+
+// querySelectorAll --> Give a Node list. 
+Have foreach prototype.
+So we can use forEach function in this and can apply the thing which we want to apply on all the Node list items in that list. 
+here we can Do as 
+let myul = document.querySelectorAll('ul')
+let myli = document.querySelectorAll('li')
+myli.forEach( (item) => item.style.backgroundColor = "hotpink" )
+
+As we know it was not an array it was a node list so we can't use map on it so if we want to use then we have to convert it 1st into array then can use the map on it.
+
+now let's see another topic that we jsut skipped in thte starting
+HTML Collection
+now if we do document.getElementByClassName('list-item') --> We will get the HTML collection and in this there is no prototype of traversing each 
+element by element as we have in node list by forEach, so we will do this via converting that into Array by Array.from(variable_name)
+For Example --> 
+let HTMLcollect = document.getElementByClassName('list-item')
+let my newArr = Array.from(HTMLcollect)
+Now we have all the properties of the array to apply on that new array of the HTMl collection.
+newArr.forEach(  (i) => i.style.color = "green" )
 
 
 </pre>
-</div>
-    
 </body>
