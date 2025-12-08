@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div>
+    <pre>
+    All these are written inside the style tag after body 
+
+
+    const div = document.createElement("div")
+    div.className ="divclass"
+    div.id = Math.round(Math.random() *10 + 1 )     // to create random id number for this div.
+    div.setAttribute('title', "My div title")       // to add own new attribute.
+    div.style.backgroundColor="green"
+    div.style.padding="10px"
+    // div.innerText ="Chai aur code" // This will overwrite the value inside the innerText as in Js the value are already set but when we do this shit we overwrite the value. so as it take two steps ===> more time we can do another method also 
+    const addText = document.createTextNode("Chai aur code")        // this will create the text node in the node list as we have seen in "33.0_lec.html" file and then we will push this it int he div as the child of the div.
+    div.append(addText)
+    //this also take two step but that we will discuss further that which is the optimised way to do that.  
+    console.log(div);
+    document.body.appendChild(div)
+
+    Now we can create a function named "create_a_new_div" to do that by taking the text, className, id and backgroundColor as input from the user do the task.
+    After that we can run a lopp to run n number of times by passing arrays of n backgroundColor and n text and n className and n id's.
+    </pre>
+    </div>
+</body>
+<script>
+    const div = document.createElement("div")
+    div.className ="divclass"
+    div.id = Math.round(Math.random() *10 + 1 )
+    div.setAttribute('title', "My div title")
+    div.style.backgroundColor="green"
+    div.style.padding="10px"
+    // div.innerText ="Chai aur code" // This will overwrite the value inside the innerText as in Js the value are already set but when we do this shit we overwrite the value. so as it take two steps ===> more time we can do another method also 
+    const addText = document.createTextNode("Chai aur code")        // this will create the text node in the node list as we have seen in "33.0_lec.html" file and then we will push this it int he div as the child of the div.
+    div.append(addText)
+    //this also take two step but that we will discuss further that which is the optimised way to do that.  
+    console.log(div);
+    document.body.appendChild(div)
+    
+</script>
+</html>
