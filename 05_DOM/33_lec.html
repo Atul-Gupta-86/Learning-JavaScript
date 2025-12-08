@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code</title>
+</head>
+<body style="background-color: black ; color: aliceblue; margin:10px "">
+    <div class="parent">
+        <!-- This is a comment and will increase the number of nodelist in the "parent.childNode" -->
+        <div class="day" >Monday</div>
+        <div class="day" >Tuesday</div>
+        <div class="day" >Wensday</div>
+        <div class="day" >Thrusday</div>
+    </div>
+    <div>
+    <pre>
+        const store = document.querySelector('.parent')
+        console.log(store)               Will give the element which have the class name "parent". 
+        console.log(store.children)      Now children is also a property which give the children (here return all 5 div with their indexing ) of any element in HTTML collection form.
+        console.log(store.children[1]).innerText       This will print Tuesday
+        for (let i = 0 ; i < store.children.length ; i++){
+            console.log(store.children[i].innerText)          ===> This will print each day in sequence.
+        }              
+        console.log(store.firstElementChild)     ===> Give the first element of the HTML collecton "store" .                                  
+        console.log(store.lastElementChild)     ===> Give the last element of the HTML collecton "store" .         
+        
+        Similarly we can also find the parents from the child via this method.
+
+        const storechild = document.querySelector(".day")
+        console.log(storechild.parentElement)           ===> Give the HTML collection of parent of that element
+        console.log(storechild.nextElementSibling)      ===> Give the next Child element of the parent of that element .
+        console.log("Nodes: ", store.childNodes);       ===> Give the total 9 nodelist here as this store each and every thing, that there are 5 Enters (↵) in the div that is also counted as the text and
+                                                        is shown in the node list. Also we can see the change if we add a comment in the second line of the Div the total number of nodelist will increase to 11. Also if we do multiple line break i.e. Enter (↵)
+                                                        continuously then browser reads all that in one so no increasement in the number of Nodelist. 
+    </pre>
+    </div>
+</body>
+<script>
+    const store = document.querySelector('.parent')
+    // console.log(store)
+    // console.log(store.children)
+    // console.log(store.children[1].innerText)
+    // for (let i = 0 ; i < store.children.length ; i++){
+    //     console.log(store.children[i].innerText)
+    // } 
+
+    // store.children[1].style.color ="orange"
+    // console.log(store.firstElementChild)
+    // console.log(store.lastElementChild)
+    // const storechild = document.querySelector(".day")
+    // console.log(storechild.parentElement)
+    // console.log(storechild.nextElementSibling)
+    console.log("Nodes: ", store.childNodes);
+    
+
+</script>
+</html>
