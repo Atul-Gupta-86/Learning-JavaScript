@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
+    <title>Chai Aur Code | DOM  </title>
+</head>
+<body style="background-color: #212121 ; color: #fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    // function add_language (new_item){
+    //     const li = document.createElement('li')
+    //     li.innerHTML = `${new_item}`
+    //     document.querySelector(".language").appendChild(li)
+    // }
+    // add_language("python")
+    // add_language("C++")
+    //In this way we can also do the code and add the element but the thing is this is not the optimised way as it traverse the elements all the way down to the end of the lsit in that parent element and it can cause time complexity. But we can do same thing in ore optimised way as ===>
+    function add_language_in_optimized_way (languageName){
+        const li =document.createElement('li')
+        li.appendChild(document.createTextNode(languageName))
+        document.querySelector(".language").appendChild(li)
+    }
+    add_language_in_optimized_way("golang")
+    add_language_in_optimized_way("python")
+    add_language_in_optimized_way("C++")
+    
+    // **************** To select nth child of an element is document.querySelector("element_Name:nth-child(nth_position)")
+    
+    //Edit values method 1
+    const second_lang = document.querySelector("li:nth-child(2)")
+    second_lang.innerHTML = "Mojo"  //but the thing is again not optimized. So use below one
+    
+
+    //Edit values method 2
+    const third_lang = document.querySelector("li:nth-child(3)")
+    const li_one = document.createElement('li')
+    li_one.textContent = "Solidity"          // OR
+    // li_one.appendChild(document.createTextNode("Java"))
+    third_lang.replaceWith(li_one)
+
+    //Edit values method 3
+    const first_lang = document.querySelector('li:first-child')
+    first_lang.outerHTML = "<li>TypeScript</li>"
+
+
+    //Remove 
+    const last_lang = document.querySelector('li:last-child')
+    last_lang.remove()
+
+    
+</script>
+</html>
